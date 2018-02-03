@@ -4,6 +4,8 @@
         <title> HackHealth! </title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="css/lightbox.css" rel="stylesheet">
+        <script src="js/lightbox-plus-jquery.js"></script>
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <style>
@@ -18,7 +20,13 @@
             .header {
                 text-align: center;
                 color: white;
-                font-size: 20px;
+                font-size: 25px;
+            }
+            .car {
+                width: 400px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
             }
         </style>
     </head>
@@ -51,9 +59,20 @@
         <img class="logo" src="../static/logo.png", alt="Dawweee!">
             
         <div class="header">
-            <p>Clicks above to see AWWEEEsome puppies!</p>
+            <p>Featured dogs of the day!</p>
         </div>
 
+        <div class="lightbox_c">
+            <a href="images/image-0.jpg" data-lightbox="image-1">
+                <img class="car" src="images/image-0.jpg", alt="Dawweee!">
+            </a>
+            <a href="images/image-1.jpg" data-lightbox="image-1">
+            </a>
+            <a href="images/image-2.jpg" data-lightbox="image-1">
+            </a>
+            <a href="images/image-3.jpg" data-lightbox="image-1">
+            </a>
+        </div>
 
     
     </body>
