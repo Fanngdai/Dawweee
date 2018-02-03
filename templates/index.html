@@ -2,25 +2,66 @@
 <html>
     <head>
         <title> HackHealth! </title>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link href="css/lightbox.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+         <link href="css/lightbox.css" rel="stylesheet">
         <script src="js/lightbox-plus-jquery.js"></script>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <style>
-            body {
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+        p {font-size: 16px;}
+        .margin {margin-bottom: 45px;}
+        .bg-1 {
+            background-color: #1abc9c; /* Green */
+            color: #ffffff;
+        }
+        .bg-2 {
+            background-color: #474e5d; /* Dark Blue */
+            color: #ffffff;
+        }
+        .bg-3 {
+            background-color: #ffffff; /* White */
+            color: #555555;
+        }
+        .bg-4 {
+            background-color: #2f2f2f; /* Black Gray */
+            color: #fff;
+        }
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+        .navbar-nav  li a:hover {
+            color: #1abc9c !important;
+        }
+        body {
                 background-color: #99D9EA;
             }
-            .logo {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .header {
-                text-align: center;
-                color: white;
-                font-size: 25px;
+        .logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .header {
+            text-align: center;
+            color: white;
+            font-size: 25px;
             }
             .car {
                 width: 400px;
@@ -30,34 +71,32 @@
             }
         </style>
     </head>
-    
-    <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">Dawweee</a>
-                </div>
 
-                <div id="navbar" class="navbar-collapse collapse">
-                    <div id="right-side" class="pull-right">
-                        <a data-toggle="tooltip" title="Click for cute pics :)" class="btn btn-default btn-lg" href="./pictures.html">Pictures</a>
-                        <a data-toggle="tooltip" title="Click for cats playing the piano" class="btn btn-default btn-lg" href="./about.html">About</a>
-                    </div>
-                </div><!--/.navbar-collapse -->
-            </div>
-        </nav>
-        
+    <body>
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">Dawweee</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="./pictures.html">Pictures</a></li>
+              <li><a href="./about.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
         <br />
         <br />
 
         <img class="logo" src="../static/logo.png", alt="Dawweee!">
-            
+
         <div class="header">
             <p>Featured dogs of the day!</p>
         </div>
@@ -74,6 +113,6 @@
             </a>
         </div>
 
-    
+
     </body>
 </html>

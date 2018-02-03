@@ -2,89 +2,133 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 {
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 {
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-
-        <a class="navbar-brand" href="index.html">Dawweee</a>
+        <a class="navbar-brand" href="./index.html">Dawweee</a>
       </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <div id="right-side" class="pull-right">
-          <a class="btn btn-default btn-lg" href="pictures.html">Pictures</a>
-          <a data-toggle="tooltip" title="Click for cats playing the piano" class="btn btn-default btn-lg" href="./videos.html">Videos</a>
-
-        </div>
-      </div><!--/.navbar-collapse -->
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
     <div class="col">
-  <br />
-  <br />
-  <br />
-  <br />
   <div class="col">
     <div class="col-sm-4">
       <div class="thumbnail">
         <img src="../static/images/cute-dog.jpg" style="width:450px;height:450px" alt="Puff">
+        <center>
         <div class="caption">
           <h3>Puff</h3>
-          <p>...</p>
-          <p><a href="Contacts.html" class="btn btn-primary" role="button">Contact</a></p>
+          <p><a href="./Contacts.html" class="btn btn-primary" role="button">Contact</a></p>
         </div>
+        </center>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
         <img src="../static/images/add.jpg" style="width:450px;height:450px" height="700">
+        <center>
         <div class="caption">
           <h3>Joe</h3>
-          <p>...</p>
-          <p><a href="Contacts.html" class="btn btn-primary" role="button">Contact</a></p>
+          <p><a href="./Contacts.html" class="btn btn-primary" role="button">Contact</a></p>
         </div>
+        </center>
       </div>
     </div>
 
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="../static/images/ii.jpg" style="width:450px;height:450px" alt="Bush">
+        <img src="../static/images/ii.jpg" style="width:450px;height:450px"alt="Bush">
+        <center>
         <div class="caption">
           <h3>Bush</h3>
-          <p>...</p>
-          <p><a href="Contacts.html" class="btn btn-primary" role="button">Contact</a></p>
+          <p><a href="./Contacts.html" class="btn btn-primary" role="button">Contact</a></p>
         </div>
+        </center>
       </div>
     </div>
 
     <div class="col-sm-4">
       <div class="thumbnail">
         <img src="../static/images/leap.jpg" style="width:400px;height:250px" alt="Meatball">
+        <center>
         <div class="caption">
           <h3>Meatball</h3>
-          <p>...</p>
-          <p><a href="Contacts.html" class="btn btn-primary" role="button">Contact</a></p>
+          <p><a href="./Contacts.html" class="btn btn-primary" role="button">Contact</a></p>
         </div>
+        </center>
       </div>
     </div>
 
     <div class="col-sm-4">
       <div class="thumbnail">
         <img src="../static/images/sleepy.jpg" style="width:400px;height:250px" alt="George">
+        <center>
         <div class="caption">
           <h3>George</h3>
-          <p>...</p>
-          <p><a href="Contacts.html" class="btn btn-primary" role="button">Contact</a></p>
+          <p><a href="./Contacts.html" class="btn btn-primary" role="button">Contact</a></p>
         </div>
+        </center>
       </div>
     </div>
   </div>
@@ -92,13 +136,31 @@
   <div class="col-sm-4">
     <div class="thumbnail">
       <img src="../static/images/cuteee.jpg" style="width:400px;height:250px" alt="Skylar">
+      <center>
       <div class="caption">
         <h3>Skylar</h3>
-        <p>...</p>
-        <p><a href="Contacts.html" class="btn btn-primary" role="button">Contact</a></p>
+        <p><a href="./Contacts.html" class="btn btn-primary" role="button">Contact</a></p>
       </div>
+      </center>
     </div>
   </div>
+
+  <!--<div class="row">
+    <div class="column">
+      <img src="../static/images/cute-dog.jpg">
+      <img src="../static/images/cuteee.jpg">
+      <img src="../static/images/ii.jpg">
+      <img src="../static/images/leap.jpg">
+      <img src="../static/images/sleepy.jpg">
+    </div>
+    <div class="column">
+      <img src="../static/images/smile.jpg">
+      <img src="../static/images/stitch.jpg">
+      <img src="../static/images/tux.jpg">
+      <img src="../static/images/wink.jpg">
+      <img src="../static/images/hi.jpg">
+    </div>
+  </div>-->
 
 </body>
 
