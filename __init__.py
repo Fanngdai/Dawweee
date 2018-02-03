@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
@@ -11,6 +11,7 @@ def home():
 
 @app.route("/pictures")
 def pictures():
+    print "Hello world"
     return render_template("pictures.html")
 
 @app.route("/video")
